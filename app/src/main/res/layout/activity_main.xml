@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:background="@drawable/ico_sign_logo"
     android:orientation="vertical"
-    tools:context="com.example.enterandregist.MainActivity">
+    tools:context="com.example.enterandregist.MainActivity"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://schemas.android.com/apk/res/android ">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,8 +17,8 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginTop="50dp"
-        android:gravity="center"
-        >
+        android:gravity="center">
+
         <TextView
             android:layout_width="250dp"
             android:layout_height="wrap_content"

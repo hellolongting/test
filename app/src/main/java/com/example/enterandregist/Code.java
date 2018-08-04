@@ -7,7 +7,6 @@ import android.graphics.Paint;
 
 import java.util.Random;
 
-import static android.graphics.Color.rgb;
 
 /**
  * Created by Lenovo on 2018/7/21.
@@ -37,7 +36,7 @@ public class Code {
         return bmpCode;
     }
 
-    public Bitmap createBitmap(){
+    public Bitmap createBitmap(){//生成
         padding_left=0;
         Bitmap bp=Bitmap.createBitmap(width,height,Bitmap.Config.ARGB_8888);//创建一个画布
         Canvas c= new Canvas(bp);//创建画布
@@ -74,7 +73,7 @@ public class Code {
     }
 
     private void randomPadding() {
-        padding_left+=10+random.nextInt(15);//这里的随机数范围时0-15.
+        padding_left+=10+random.nextInt(10);//这里的随机数范围时0-10.
         padding_top=15+random.nextInt(15);
     }
 
